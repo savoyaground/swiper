@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       vehicleData = [
         {
           title: "Executive SUV",
-          passengers: "Up to 6 passengers",
+          passengers: "Up to 5 passengers",
           bags: "Up to 6 bags",
           description: "Ideal for small group travel, the executive SUV offers additional space and flexibility for coordinated movements, airport transfers, and multi-stop itineraries. It allows teams to stay together without sacrificing comfort or timing, making it a practical solution for executives traveling in pairs or small groups.",
           bestFor: "SMALL GROUP TRAVEL | FLEXIBLE SCHEDULING",
