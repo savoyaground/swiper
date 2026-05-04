@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: "Premium Sedan",
-          passengers: "Up to 3 passengers",
-          bags: "Up to 3 bags",
+          passengers: "Up to 2 passengers",
+          bags: "Up to 2 bags",
           description: "An elevated cabin experience for senior executives and VIP travel. The premium sedan delivers higher-grade models and a refined interior for those occasions where the standard vehicle class isn't the right choice. Ideal for board-level travel, high-profile trips, and moments where every detail is expected to reflect the highest standards.",
           bestFor: "VIP TRAVEL | CLIENT TRANSPORT",
           cta: "Book Premium Sedan"
