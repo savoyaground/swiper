@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
           title: "Luxury Sprinter Van",
           passengers: "Up to 14 passengers",
-          bags: "Up to 14 bags",
+          bags: "Up to 20 bags",
           description: "Designed for team transportation, the luxury sprinter van supports efficient group movement for events, airport transfers, and scheduled routes with added comfort. It simplifies coordination by consolidating passengers into a single vehicle while maintaining a premium experience, making it ideal for corporate teams and organized travel groups.",
           bestFor: "GROUP TRANSPORT | EVENT SHUTTLES",
           cta: "Book Sprinter Van"
