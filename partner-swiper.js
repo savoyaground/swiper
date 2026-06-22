@@ -1,4 +1,4 @@
-<script>
+
       var swiper_autos = new Swiper(".swiper-autos", {
         slidesPerView: 'auto',
         centeredSlides: false,
@@ -48,4 +48,4 @@
         watchSlidesProgress: true,
         slidesPerGroupAuto: false,
       });
-  </script>
+
