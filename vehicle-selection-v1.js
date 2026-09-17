@@ -99,16 +99,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 🔹 UPDATE CONTENT
+    /* Writes only where the element exists. A missing element used to throw
+       and stop the whole update, which left the text on the first vehicle. */
+    function setText(selector, value) {
+      const el = container.querySelector(selector);
+      if (el) el.textContent = value;
+    }
+
     function updateContent(index) {
       const data = vehicleData[index];
       if (!data) return;
 
-      container.querySelector('.vehicle-title').textContent = data.title;
-      container.querySelector('.vehicle-meta-passengers').textContent = data.passengers;
-      container.querySelector('.vehicle-meta-bags').textContent = data.bags;
-      container.querySelector('.vehicle-description').textContent = data.description;
-      container.querySelector('.vehicle-best-for').textContent = data.bestFor;
-      container.querySelector('.vehicle-cta .btn-txt').textContent = data.cta;
+      setText('.vehicle-title', data.title);
+      setText('.vehicle-meta-passengers', data.passengers);
+      setText('.vehicle-meta-bags', data.bags);
+      setText('.vehicle-description', data.description);
+      setText('.vehicle-best-for', data.bestFor);
+
+      /* The CTA is a Webflow Button now, which has no .btn-txt child,
+         so fall back to the link itself. */
+      const cta = container.querySelector('.vehicle-cta .btn-txt')
+        || container.querySelector('.vehicle-cta a, .vehicle-cta button');
+      if (cta) cta.textContent = data.cta;
     }
 
     function updateUI() {
